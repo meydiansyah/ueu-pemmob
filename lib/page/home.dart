@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/main.dart';
 import 'package:flutter_app/page/bangun_datar/home.dart';
+import 'package:flutter_app/page/localization/page_localization.dart';
 import 'package:flutter_app/page/news.dart';
 import 'package:flutter_app/page/product_list.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -138,6 +139,15 @@ class _HomeState extends State<Home> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => BangunDatarPage(),
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text("Lozalization"),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomeLocalization(),
                 ),
               ),
             ),
