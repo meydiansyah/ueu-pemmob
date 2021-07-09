@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/main.dart';
 import 'package:flutter_app/page/bangun_datar/home.dart';
+import 'package:flutter_app/page/expenses/expenses.dart';
 import 'package:flutter_app/page/localization/page_localization.dart';
 import 'package:flutter_app/page/news.dart';
 import 'package:flutter_app/page/product_list.dart';
@@ -148,6 +149,15 @@ class _HomeState extends State<Home> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => HomeLocalization(),
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text("Expenses"),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ExpensesPage(),
                 ),
               ),
             ),

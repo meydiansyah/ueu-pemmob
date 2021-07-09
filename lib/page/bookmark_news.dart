@@ -32,6 +32,7 @@ class _BookmarkPageState extends State<BookmarkPage> {
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
       ),
+      backgroundColor: Colors.white,
       body: StreamBuilder<List<SavedNews>>(
         stream: Stream.fromFuture(controller.getBookmark()),
         builder: (context, snapshot) {
